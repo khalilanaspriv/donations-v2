@@ -109,7 +109,7 @@ button,
 
   font-size: var(--fontsize-sm);
   text-align: center;
-  color: rgb(var(--color-button-text));
+  color: black;
 
   border-radius: var(--radius-md);
   border: 2px solid rgb(var(--color-border));
@@ -118,8 +118,6 @@ button,
 }
 
 .btn:hover {
-  color: rgb(var(--color-button-text));
-
   transform: translateY(-1px);
 }
 
