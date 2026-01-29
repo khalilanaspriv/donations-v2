@@ -44,6 +44,10 @@ Looking back, I've always wondered how NGOs coordinate and get access to donatio
 - [ ] Correctly manage the state of the different listings to avoid having unavailable listing marked as active.
 
 #  Current Progress
+- [X] Create new Supabase project.
+- [X] Create new GitHub repository.
+- [X] Create project file structure.
+- [X] Create the different tables I need.
 
 #  Issues and How I Fixed Them
 
