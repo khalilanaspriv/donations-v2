@@ -48,6 +48,7 @@ Looking back, I've always wondered how NGOs coordinate and get access to donatio
 - [X] Create new GitHub repository.
 - [X] Create project file structure.
 - [X] Create the different tables I need.
+- [X] Put design system in place with variables and reset attributes.
 
 #  Issues and How I Fixed Them
 
