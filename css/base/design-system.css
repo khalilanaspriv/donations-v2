@@ -1,0 +1,112 @@
+:root {
+  --color-primary-bg: 248, 250, 252;
+  --color-secondary-bg: 255, 255, 255;
+  --color-primary-text: 15, 23, 42;
+  --color-secondary-text: 71, 85, 105;
+  --color-primary-text-inv: 241, 245, 249;
+  --color-secondary-text-inv: 148, 163, 184;
+  --color-neutral: 20, 52, 99;
+  --color-neutral-hover: 21, 66, 134;
+  --color-primary-accent: 59, 130, 246;
+  --color-primary-accent-hover: 37, 99, 235;
+  --color-secondary-accent: 14, 165, 233;
+  --color-secondary-accent-hover: 2, 132, 199;
+  --color-border: 226, 232, 240;
+  --color-border-focus: 59, 130, 246;
+  --color-success: 16, 158, 83;
+  --color-success-hover: 12, 128, 68;
+  --color-error: 250, 60, 60;
+  --color-error-hover: 220, 40, 40;
+  --color-warning: 255, 160, 0;
+  --color-warning-hover: 230, 140, 0;
+  --color-button-text: 255, 255, 255;
+
+  --fontsize-xxs: 0.64rem;
+  --fontsize-xs: 0.8rem;
+  --fontsize-sm: clamp(0.95rem, 0.1vw + 0.9rem, 1rem);
+  --fontsize-md: clamp(1.15rem, 0.3vw + 1.1rem, 1.25rem);
+  --fontsize-lg: clamp(1.35rem, 0.6vw + 1.2rem, 1.563rem);
+  --fontsize-xl: clamp(1.4rem, 1.5vw + 1rem, 1.953rem);
+  --fontsize-xxl: clamp(1.7rem, 2.5vw + 1rem, 2.441rem);
+
+  --spacing-xxs: 0.25rem;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.25rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-xxl: 3rem;
+
+  --border-subtle: 3px solid rgba(var(--color-border), 0.3);
+
+  --radius-xxs: 2px;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 16px;
+  --radius-xxl: 20px;
+  --radius-full: 9999px;
+
+  --shadow-xxs: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-xs: 0 1px 3px rgba(0,0,0,0.1);
+  --shadow-sm: 0 4px 6px -1px rgba(0,0,0,0.1);
+  --shadow-md: 0 10px 15px -3px rgba(0,0,0,0.1);
+  --shadow-lg: 0 20px 25px -5px rgba(0,0,0,0.1);
+  --shadow-xl: 0 25px 50px -12px rgba(0,0,0,0.15);
+  --shadow-xxl: 0 35px 60px -15px rgba(0,0,0,0.3);
+
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s ease;
+  --transition-fast: 0.15s ease-in-out;
+  --transition-very-fast: 0.075s ease-in-out;
+}
+
+[data-theme="dark"] {
+  --color-primary-bg: 15, 23, 42;
+  --color-secondary-bg: 30, 41, 59;
+  --color-primary-text: 241, 245, 249;
+  --color-secondary-text: 148, 163, 184;
+  --color-primary-text-inv: 15, 23, 42;
+  --color-secondary-text-inv: 71, 85, 105;
+  --color-neutral: 51, 65, 85;
+  --color-neutral-hover: 71, 85, 105;
+  --color-primary-accent: 96, 165, 250;
+  --color-primary-accent-hover: 147, 197, 253;
+  --color-border: 51, 65, 85;
+  --color-success: 34, 197, 94;
+  --color-success-hover: 74, 222, 128;
+  --color-error: 255, 95, 95;
+  --color-error-hover: 255, 120, 120;
+  --color-warning: 255, 180, 50;
+  --color-warning-hover: 255, 200, 80;
+  --color-button-text: 255, 255, 255;
+
+  --border-subtle: 3px solid rgba(var(--color-border), 0.1);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --spacing-md: 1.5rem;
+    --spacing-lg: 1.8rem;
+    --spacing-xl: 2.5rem;
+    --spacing-xxl: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --spacing-xl: 3.5rem;
+    --spacing-xxl: 6rem;
+    --radius-xl: 24px;
+    --radius-xxl: 32px;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --spacing-lg: 2.5rem;
+    --spacing-xl: 4rem;
+    --spacing-xxl: 7rem;
+  }
+}
