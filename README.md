@@ -14,7 +14,6 @@
 #  Current Progress
 
 #  Issues and How I Fixed Them
-### [Issue Name]
 
 #  Project Structure (How to Run Locally)
 ### Prerequisites
