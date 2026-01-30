@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.min.css" rel="stylesheet">
+
+  <title>Continue as NGO</title>
+
+  <link rel="stylesheet" href="../../css/base/design-system.css">
+  <link rel="stylesheet" href="../../css/base/reset.css">
+  <link rel="stylesheet" href="../../css/modules/signup/signup-ngo.css">
+</head>
+<body>
+  <main class="main">
+    <section class="signup-ngo-section">
+      <div class="signup-ngo-container">
+        <div class="intro">
+          <h1 class="title">Continue as NGO</h1>
+          <p class="description">Join the platform as an NGO, contact donors and get items for charity.</p>
+        </div>
+
+        <div class="signup-container">
+          <form action="" method="POST" enctype="multipart/form-data" class="signup-form">
+            <div class="form-parts">
+              <div class="form-left">
+                <div class="name-field">
+                  <div class="label-wrapper">
+                    <label for="name-input" class="name-label">Official NGO Name</label>
+                    <div class="info-item">
+                      <i class="ri-information-line"></i>
+                      <div class="tooltip">Enter the name of the NGO, it will appear on the platform for everyone to see.</div>
+                    </div>
+                  </div>
+                  <input type="text" autocomplete="name" placeholder="e.g. Fondation Joie" required name="name" class="name-input" id="name-input">
+                </div>
+
+                <div class="email-field">
+                  <div class="label-wrapper">
+                    <label for="email-input" class="email-label">Email</label>
+                    <div class="info-item">
+                      <i class="ri-information-line"></i>
+                      <div class="tooltip">You will receive notifications and a verification link on this email. Make sure that it is correct.</div>
+                    </div>
+                  </div>
+                  <input type="email" autocomplete="email" placeholder="e.g. fondationjoie@gmail.com" required name="email" class="email-input" id="email-input">
+                </div>
+
+                <div class="whatsapp-number-field">
+                  <div class="label-wrapper">
+                    <label for="whatsapp-number-input" class="whatsapp-number-label">WhatsApp Number</label>
+                    <div class="info-item">
+                      <i class="ri-information-line"></i>
+                      <div class="tooltip">Enter a valid Moroccan phone number that is registered on WhatsApp. You will need this number to be able to connect with donors.</div>
+                    </div>
+                  </div>
+                  <input type="tel" inputmode="tel" autocomplete="tel" pattern="(\+212|0)([5-7][0-9]{8})" placeholder="e.g. +21266109480845" required name="whatsapp-number" class="whatsapp-number-input" id="whatsapp-number-input">
+                </div>
+
+                <div class="city-neighborhood-field">
+                  <div class="city-field">
+                    <div class="label-wrapper">
+                      <label for="city-input" class="city-label">City</label>
+                      <div class="info-item">
+                        <i class="ri-information-line"></i>
+                        <div class="tooltip">Select the city where the NGO is located. This will be your default search filter.</div>
+                      </div>
+                    </div>
+                    <select name="city" id="city-input" required>
+                      <option value="" disabled selected>City</option>
+                    </select>
+                  </div>
+
+                  <div class="neighborhood-field">
+                    <div class="label-wrapper">
+                      <label for="neighborhood-input" class="neighborhood-label">Neighborhood</label>
+                      <div class="info-item">
+                        <i class="ri-information-line"></i>
+                        <div class="tooltip">Helps us group nearby donations for you automatically.</div>
+                      </div>
+                    </div>
+                    <select name="neighborhood" id="neighborhood-input" required>
+                      <option value="" disabled selected>Neighborhood</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-middle">
+                <div class="ngo-description-field">
+                  <div class="label-wrapper">
+                    <label for="ngo-description-input" class="ngo-description-label">NGO Description</label>
+                    <div class="info-item">
+                      <i class="ri-information-line"></i>
+                      <div class="tooltip">Give a short description of the NGO: activity, goal, mission etc...</div>
+                    </div>
+                  </div>
+                  <textarea placeholder="Supporting families in need through food and clothing donations." required name="ngo-description" class="ngo-description-input" id="ngo-description-input"></textarea>
+                </div>
+
+                <div class="ngo-category-field">
+                  <div class="label-wrapper">
+                    <label for="ngo-category-input" class="ngo-category-label">NGO Category</label>
+                    <div class="info-item">
+                      <i class="ri-information-line"></i>
+                      <div class="tooltip">Select the category that fits the NGO.</div>
+                    </div>
+                  </div>
+                  <select name="ngo-category" id="ngo-category-input" required>
+                    <option value="" disabled selected>NGO Category</option>
+                  </select>
+                </div>
+
+                <div class="ngo-ice-field">
+                  <div class="label-wrapper">
+                    <label for="ngo-ice-input" class="ngo-ice-label">NGO ICE Number</label>
+                    <div class="info-item">
+                      <i class="ri-information-line"></i>
+                      <div class="tooltip">Enter the ICE number of the NGO. This will be used for verification in order to be able to see donor contact information.</div>
+                    </div>
+                  </div>
+                  <input type="text" inputmode="numeric" pattern="\d{15}" placeholder="e.g. 001234567000083" required name="ngo-ice" class="ngo-ice-input" id="ngo-ice-input">
+                </div>
+              </div>
+
+              <div class="form-right">
+                <div class="ngo-verification-doc-field">
+                  <div class="label-wrapper">
+                    <label for="ngo-verification-doc-input" class="ngo-verification-doc-label">Verification Document</label>
+                    <div class="info-item">
+                      <i class="ri-information-line"></i>
+                      <div class="tooltip">Upload the "Récépissé de Dépôt" document. PDF or Images only. Maximum of 10MB.</div>
+                    </div>
+                  </div>
+                  <input type="file" id="ngo-verification-doc-input" accept=".pdf,.jpg,.jpeg,.png" required name="ngo-verification-doc" class="ngo-verification-doc-input">
+                </div>
+
+                <div class="password-field">
+                  <div class="label-wrapper">
+                    <label for="password-input" class="password-label">Password</label>
+                    <div class="info-item">
+                      <i class="ri-information-line"></i>
+                      <div class="tooltip">Enter a strong password with at least 8 characters, 2 numbers, 1 special character.</div>
+                    </div>
+                  </div>
+                  <input type="password" pattern="^(?=(.*[0-9]){2,})(?=.*[!@#$%^&*])(?=.{8,}).*$" autocomplete="new-password" placeholder="e.g. ••••••••••••••" required name="password" class="password-input" id="password-input">
+                </div>
+
+                <div class="confirm-password-field">
+                  <div class="label-wrapper">
+                    <label for="confirm-password-input" class="confirm-password-label">Confirm Password</label>
+                    <div class="info-item">
+                      <i class="ri-information-line"></i>
+                      <div class="tooltip">Must match the password entered above.</div>
+                    </div>
+                  </div>
+                  <input type="password" pattern="^(?=(.*[0-9]){2,})(?=.*[!@#$%^&*])(?=.{8,}).*$" autocomplete="new-password" placeholder="e.g. ••••••••••••••" required name="confirm-password" class="confirm-password-input" id="confirm-password-input">
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+        <div class="suggestions">
+          <p class="login-suggestion">Already have an account? <a href="../login/login.html">Log In</a> here.</p>
+          <p class="return-suggestion">Not an NGO? <a href="choose-role.html">Go back</a> here.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <title>Choose your role</title>
+
+  <link rel="stylesheet" href="../../css/base/design-system.css">
+  <link rel="stylesheet" href="../../css/base/reset.css">
+  <link rel="stylesheet" href="../../css/modules/signup/choose-role.css">
+</head>
+<body>
+  <main class="main">
+    <section class="choose-role-section">
+      <div class="choose-role-container">
+        <div class="intro">
+          <h1 class="title">How would you like to help us?</h1>
+          <p class="description">Choose your role to start using the platform.</p>
+        </div>
+
+        <div class="roles">
+          <div class="role donor">
+            <span class="donor-icon">🤝</span>
+            <h2 class="donor-title">Donor</h2>
+            <p class="donor-description">Support your community by giving donations to verified NGOs using the platform.</p>
+
+            <button onclick="window.location.href='signup-donor.html';" class="btn btn-primary">Continue as Donor</button>
+          </div>
+
+          <div class="role ngo">
+            <span class="ngo-icon">🏢</span>
+            <h2 class="ngo-title">NGO</h2>
+            <p class="ngo-description">Register your association, get verified by giving your ICE number and a verification document, connect with donors.</p>
+
+            <button onclick="window.location.href='signup-ngo.html';" class="btn btn-primary">Continue as NGO</button>
+          </div>
+        </div>
+
+        <p class="login-suggestion">Already have an account? <a href="../login/login.html">Log In</a> here.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

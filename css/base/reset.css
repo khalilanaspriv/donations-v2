@@ -109,9 +109,9 @@ button,
 
   font-size: var(--fontsize-sm);
   text-align: center;
-  color: black;
+  color: rgb(var(--color-button-text));
 
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   border: 2px solid rgb(var(--color-border));
 
   transition: var(--transition-very-fast);
@@ -160,12 +160,28 @@ textarea {
 
   background-color: rgb(var(--color-secondary-bg));
   border: 2px solid rgb(var(--color-border));
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
 
   padding: var(--spacing-sm);
   appearance: none;
 
   transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+input:focus:user-invalid:not(:placeholder-shown),
+textarea:focus:user-invalid:not(:placeholder-shown),
+select:focus:user-invalid:not(:placeholder-shown) {
+  border-color: rgb(var(--color-error));
+
+  outline-color: rgb(var(--color-error));
+}
+
+input:user-invalid:not(:placeholder-shown),
+textarea:user-invalid:not(:placeholder-shown),
+select:user-invalid:not(:placeholder-shown) {
+  border-color: rgb(var(--color-error));
+
+  background-color: rgba(var(--color-error), 0.1);
 }
 
 textarea {
@@ -234,7 +250,7 @@ input[type="file"] {
 
   background-color: rgb(var(--color-secondary-bg));
   border: 2px solid rgb(var(--color-border));
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
 
   font-family: inherit;
 
@@ -255,7 +271,7 @@ input[type="file"]::file-selector-button {
 
   background-color: rgb(var(--color-neutral));
   border: 2px solid rgb(var(--color-border));
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
 
   padding: var(--spacing-sm) var(--spacing-md);
   cursor: pointer;
